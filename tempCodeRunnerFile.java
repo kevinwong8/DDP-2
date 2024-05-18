@@ -1,0 +1,1 @@
+System.out.println("banyak barang diambil = " + banyakBarangDiambil);
