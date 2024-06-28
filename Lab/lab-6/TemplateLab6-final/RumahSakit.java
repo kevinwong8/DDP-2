@@ -79,13 +79,16 @@ class RumahSakit {
                     boolean dokterRamah = in.next().equals("Yes") ? true : false;
                     // TODO: Buat objek Dokter dan masukkan ke dalam array daftarWarga dengan
                     // memanggil method masukkanKeDaftarWarga(objekDokter)
-                    masukkanKeDaftarWarga(new Dokter(nama, penyakitKeahlian, dokterRamah));
+                    Dokter dokter = new Dokter(nama, penyakitKeahlian, dokterRamah);
+                    masukkanKeDaftarWarga(dokter);
 
                 } else {
                     String penyakit = in.next();
                     // TODO: Buat objek Pasien dan masukkan ke dalam array daftarWarga dengan
                     // memanggil method masukkanKeDaftarWarga(objekPasien)
-                    masukkanKeDaftarWarga(new Pasien(nama, penyakit));
+
+                    Pasien pasien = new Pasien(nama, penyakit);
+                    masukkanKeDaftarWarga(pasien);
 
                 }
             } else if (event.equals("INTERAKSI")) {

@@ -58,8 +58,8 @@ public class Main {
                 output.println(hasil);
             } else {
                 String[] hasil = mobilNow.simulasi();
-                for (String line : hasil) {
-                    output.println(line);
+                for (String lin : hasil) {
+                    output.println(lin);
                 }
             }
 

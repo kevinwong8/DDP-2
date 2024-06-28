@@ -19,18 +19,18 @@ public class Dokter extends Warga {
 	// TODO: Lengkapi method berinteraksi untuk dokter
 	@Override
 	public void berinteraksi(Warga X) {
-		if (X instanceof Warga) {
+		if (X instanceof Pasien) {
 			this.jumlahPasienDitemui++;
 		}
 
-		addLogInteraksi(X);
+		this.addLogInteraksi(X);
 
 	}
 
 	// TODO: Lengkapi toString dengan memanggil method toString milik superclass
 	@Override
 	public String toString() {
-		return "";
+		return super.toString();
 	}
 
 	public int getJumlahPasienDitemui() {

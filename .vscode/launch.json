@@ -2,6 +2,27 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": "DDP 2_e17d8956"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "lab7.Main",
+      "projectName": "DDP 2_e17d8956"
+    },
+    {
+      "type": "java",
+      "name": "RumahSakit",
+      "request": "launch",
+      "mainClass": "RumahSakit",
+      "projectName": "DDP 2_e17d8956"
+    },
+    {
       "type": "lldb",
       "request": "launch",
       "name": "Debug",

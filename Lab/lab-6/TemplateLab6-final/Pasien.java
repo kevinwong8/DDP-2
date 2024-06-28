@@ -16,7 +16,7 @@ public class Pasien extends Warga {
 	}
 
 	public void cekHappiness(int happinessPlus20) {
-		if (happinessPlus20 > 0)
+		if (happinessPlus20 < 0)
 			happiness = 0;
 		else if (happinessPlus20 > 100)
 			happiness = 100;
@@ -37,26 +37,28 @@ public class Pasien extends Warga {
 		if (X instanceof Dokter) {
 			Dokter isha = (Dokter) X;
 			if (cekSembuh(isha)) {
-				this.happiness += 20;
+				this.setHappiness(this.getHappiness() + 20);
 				cekHappiness(happiness);
-			} else if (isha.getDokterRamah()) {
-				this.happiness += 10;
+			}
+			if (isha.getDokterRamah()) {
+				this.setHappiness(this.getHappiness() + 10);
 				cekHappiness(happiness);
 			} else {
-				this.happiness -= 5;
+				this.setHappiness(this.getHappiness() - 5);
 				cekHappiness(happiness);
 			}
 		} else {
-			this.happiness += 5;
+			this.setHappiness(this.getHappiness() + 5);
 			cekHappiness(happiness);
 		}
 		this.addLogInteraksi(X);
+
 	}
 
 	// TODO: Lengkapi toString dengan memanggil method toString milik superclass
 	@Override
 	public String toString() {
-		return "";
+		return super.toString();
 	}
 
 	public int getHappiness() {

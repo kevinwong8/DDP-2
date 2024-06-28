@@ -36,11 +36,11 @@ public class Warga {
 	// TODO: Lengkapi toString() dengan mengembalikan nama warga
 	@Override
 	public String toString() {
-		return "";
+		return this.nama;
 	}
 
 	// TODO: Lengkapi getLogInteraksi() dengan mengembalikan log interaksi warga
 	public Warga[] getLogInteraksi() {
-		return logInteraksi;
+		return this.logInteraksi;
 	}
 }
